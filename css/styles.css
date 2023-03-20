@@ -1,8 +1,26 @@
+/* ЗАГАЛЬНЕ */
+
 :root {
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
   --active-color: #404bbf;
   --button-background: #4d5ae5;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
 }
 
 .list {
@@ -15,8 +33,23 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-/* Хедер */
+img {
+  display: block;
+}
+
+/* ХЕДЕР */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo-heder {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -28,6 +61,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--button-background);
+  margin-right: 76px;
 }
 .web {
   color: var(--primary-text-color);
@@ -47,20 +81,8 @@ body {
 }
 .nav-cont {
   font-style: normal;
+  margin-left: auto;
 }
-/* .nav-adress-mail-link {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: inherit;
-} */
-/* .nav-adress-mail-link:hover,
-.nav-adress-mail-link:focus {
-  color: var(--active-color);
-} */
-
 .nav-adress-link {
   font-family: "Roboto";
   font-style: normal;
@@ -70,14 +92,51 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
 .nav-adress-link:hover,
 .nav-adress-link:focus {
   color: var(--active-color);
 }
-/* MAIN STUDIO */
+.container-header {
+  display: flex;
+  /* align-items: center; */
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navigations {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav-adress {
+  display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-adress-mail {
+  margin-right: 40px;
+}
+
+/* MAIN */
+/* СЕКЦІЯ ГЕРОЙ */
+.main-title {
+  background-color: var(--primary-text-color);
+  padding-top: 188px;
+  padding-left: 472px;
+  padding-right: 472px;
+  margin-bottom: 48px;
+}
+
 .hero {
   background-color: var(--primary-text-color);
+  padding-bottom: 188px;
 }
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -92,17 +151,22 @@ body {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--button-background);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--active-color);
 }
-
+/* СЕКЦІЯ НАША ПОЛІТИКА */
+.cont-our-policy {
+  padding-top: 120px;
+}
 .list-our-policy {
   font-weight: 500;
   font-size: 20px;
@@ -115,6 +179,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.policy-list {
+  display: flex;
+  justify-content: center;
+}
+.policy-item {
+  width: 264px;
+}
+
+/* СЕКЦІЯ КАРТИНОК, ЩО МИ РОБИМО */
+.our-work {
+  padding-top: 120px;
+}
 .work {
   font-weight: 700;
   font-size: 36px;
@@ -123,6 +199,17 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
+}
+.work-list {
+  display: flex;
+  margin-top: 72px;
+  justify-content: center;
+}
+/* СЕКЦІЯ НАША КОМАНДА */
+.our-team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 265px;
 }
 .team {
   font-weight: 700;
@@ -140,16 +227,36 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+}
+.employee {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .position {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  margin-top: 8px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
 }
 
 /* MAIN PORTFOLIO */
 /* КНОПКИ */
+.butums {
+  display: flex;
+  width: 586px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
 .btn-menu {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -161,6 +268,13 @@ body {
   letter-spacing: 0.04em;
   color: var(--button-background);
   cursor: pointer;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .btn-menu:hover,
 .btn-menu:focus {
@@ -177,6 +291,23 @@ body {
 }
 
 /* Продукти */
+.cont-products {
+  margin-top: 72px;
+}
+.list-item {
+  width: 360px;
+}
+.border-product {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
 .produts-item {
   font-style: normal;
   font-weight: 500;
@@ -184,12 +315,17 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 .produts-descriptions {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 /* ФУТЕР */
 .footer-portfolio {
@@ -197,9 +333,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
+  width: 264px;
 }
 
 /* ФУТЕР */
+.cont-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .web-footer {
   color: #f4f4fd;
 }
